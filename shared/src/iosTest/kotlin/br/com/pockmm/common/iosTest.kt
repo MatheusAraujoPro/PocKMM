@@ -1,4 +1,4 @@
-package br.com.progdeelite.kmmprogdeelite
+package br.com.pockmm.common
 
 import kotlin.test.Test
 import kotlin.test.assertTrue

@@ -1,4 +1,4 @@
-package br.com.progdeelite.kmmprogdeelite
+package br.com.pockmm.common
 
 import org.junit.Assert.assertTrue
 import org.junit.Test

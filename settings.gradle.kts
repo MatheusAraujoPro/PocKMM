@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KmmProgDeElite"
+rootProject.name = "PocKMMCompose"
 include(":androidApp")
 include(":shared")

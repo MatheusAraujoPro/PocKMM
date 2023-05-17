@@ -1,22 +1,15 @@
-
-// 1) Definir dependências / Android dolphin ja cria com compose
-// 2) adicionar dependencias
-// 3) enxergar o beneficio da centralização das dependências
-
-
-/** PLAYSTORE VERSIONS */
 object Playstore {
-    const val applicationId = "br.com.progdeelite.kmmprogdeelite.android" // can't change once defined
+    const val applicationId = "br.com.pockmm.common.android"
     const val compileSdk = 33
     const val minSdk = 23
     const val targetSdk = 33
-    const val versionCode = 1       // must be increased by every playstore upload
-    const val versionName = "1.0.0" // you should increase too. Suggested approach (https://semver.org/)
+    const val versionCode = 1
+    const val versionName = "1.0.0"
 }
 
 object Namespaces {
-    const val android = "br.com.progdeelite.kmmprogdeelite.android"
-    const val shared = "br.com.progdeelite.kmmprogdeelite"
+    const val android = "br.com.pockmm.common.android"
+    const val shared = "br.com.pockmm.common"
 }
 
 object Plugins {
@@ -27,7 +20,6 @@ object Plugins {
     const val multiplatform = "multiplatform"
 }
 
-/** DEPENDENCY VERSIONS */
 object Versions {
     const val compose = "1.1.1"
     const val composeActivity = "1.4.0"
@@ -39,17 +31,12 @@ object Versions {
     const val extJunit = "1.1.3"
     const val testManifest = "1.1.0-beta01"
     const val espressoCore = "3.4.0"
-    const val uiUnitTest = "1.1.0-beta01"
+    const val uiUnitTest = "1.1.0"
     const val kotlin = "1.7.10"
     const val pluginAndroidLib = "7.3.0"
     const val pluginAndroidApp = "7.3.0"
 }
 
-/**
- * APP DEPENDENCIES
- * How to add to build.gradle(:app)?
- * Ex: Inside dependencies{...} add: implementation Androidx.core
- */
 object Androidx {
     const val core = "androidx.core:core-ktx:${Versions.androidxCore}"
     const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}"
@@ -67,31 +54,16 @@ object Compose {
     const val ui = "androidx.compose.ui:ui:${Versions.compose}"
 }
 
-/**
- * UNIT TEST
- * How to add to build.gradle(:app)?
- * Ex: Inside dependencies{...} add: testImplementation Test.junit
- */
 object Test {
     const val junit = "junit:junit:${Versions.junit}"
 }
 
-/**
- * ANDROID UI TESTS
- * How to add to build.gradle(:app)?
- * Ex: Inside dependencies{...} add: androidTestImplementation TestUi.espressoCore
- */
 object TestUi {
     const val extJunit = "androidx.test.ext:junit:${Versions.extJunit}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
     const val uiUnitTest = "androidx.compose.ui:ui-test-junit4:${Versions.uiUnitTest}"
 }
 
-/**
- * DEBUG TESTS
- * How to add to build.gradle(:app)?
- * Ex: Inside dependencies{...} add: debugImplementation Debug.testManifest
- */
 object Debug {
     const val testManifest = "androidx.compose.ui:ui-test-manifest:${Versions.testManifest}"
 }

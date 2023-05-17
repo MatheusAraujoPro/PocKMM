@@ -1,4 +1,4 @@
-package br.com.progdeelite.kmmprogdeelite.android
+package br.com.pockmm.common.android
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.progdeelite.kmmprogdeelite.Greeting
+import br.com.pockmm.common.Greeting
 
 @Composable
 fun MyApplicationTheme(
