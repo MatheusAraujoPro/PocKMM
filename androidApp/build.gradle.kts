@@ -38,6 +38,17 @@ dependencies {
     implementation(Androidx.core)
     implementation(Androidx.lifecycleRuntime)
 
+    //KTOR
+    implementation(Ktor.ktorClient)
+
+    // KOIN
+    implementation(Koin.koinCore)
+    implementation(Koin.koinAndroid)
+    implementation(Koin.koinAndroidXCompose)
+
+    // COIL
+    implementation(Coil.coil)
+
     // CORE LIBS
     implementation(Compose.ui)
     implementation(Compose.material)

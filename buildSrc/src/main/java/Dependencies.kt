@@ -37,11 +37,27 @@ object Versions {
     const val pluginAndroidApp = "7.3.0"
     const val kotlinx = "1.6.4"
     const val viewModel = "2.5.1"
+    const val koinVersion = "3.4.0"
+    const val coilVersion = "2.1.0"
+    const val ktorVersion = "2.3.0"
 }
 
 object Kotlinx {
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlinx}"
     const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.kotlinx}"
+}
+
+object Koin {
+    const val koinCore = "io.insert-koin:koin-core:${Versions.koinVersion}"
+    const val koinAndroid = "io.insert-koin:koin-android:${Versions.koinVersion}"
+    const val koinAndroidXCompose = "io.insert-koin:koin-androidx-compose:${Versions.koinVersion}"
+}
+object Coil {
+    const val coil = "io.coil-kt:coil-compose:${Versions.coilVersion}"
+}
+
+object Ktor {
+    const val ktorClient = "io.ktor:ktor-client-core:${Versions.ktorVersion}"
 }
 
 object Androidx {
