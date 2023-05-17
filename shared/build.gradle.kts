@@ -17,13 +17,22 @@ kotlin {
     }
 
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation(Kotlinx.coroutinesCore)
+            }
+        }
         val commonTest by getting {
             dependencies {
+                implementation(Kotlinx.coroutinesTest)
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                api(Androidx.viewModelLifecicle)
+            }
+        }
         val androidTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting

@@ -35,11 +35,19 @@ object Versions {
     const val kotlin = "1.7.10"
     const val pluginAndroidLib = "7.3.0"
     const val pluginAndroidApp = "7.3.0"
+    const val kotlinx = "1.6.4"
+    const val viewModel = "2.5.1"
+}
+
+object Kotlinx {
+    const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlinx}"
+    const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.kotlinx}"
 }
 
 object Androidx {
     const val core = "androidx.core:core-ktx:${Versions.androidxCore}"
     const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}"
+    const val viewModelLifecicle = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.viewModel}"
 }
 object Compose {
     const val activity = "androidx.activity:activity-compose:${Versions.composeActivity}"
